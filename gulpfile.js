@@ -57,7 +57,7 @@ gulp.task('watch', function () {
 
 gulp.task('webserver', function() {
   connect.server({
-    root: 'dist',
+    root: '..',
     livereload: true
   });
 });
