@@ -104,6 +104,12 @@ gulp.task('compile-less', function(){
       .pipe(gulp.dest('dist/css'));
 });
 
+// Copy the entire dist folder into the parent repository
+gulp.task('copy-dist', function (){
+  return gulp.src('dist/**')
+    .pipe(gulp.dest('../Styles'));
+});
+
 /**
  * Watch src
  */
@@ -130,5 +136,5 @@ gulp.task('livereload', function() {
     .pipe(connect.reload());
 });
 
-gulp.task('build', ['copy-vendors', 'copy-scripts', 'copy-templates', 'copy-files', 'copy-images', 'copy-fonts', 'compile-less']);
+gulp.task('build', ['copy-vendors', 'copy-scripts', 'copy-templates', 'copy-files', 'copy-images', 'copy-fonts', 'compile-less', 'copy-dist']);
 gulp.task('default', ['build', 'webserver', 'livereload', 'watch']);
