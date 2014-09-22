@@ -37,7 +37,7 @@ var fonts = [
   'src/bower_components/font-awesome/fonts/*.{ttf,woff,eof,svg}'
 ];
 
-var paths = {
+var paths = {
   js: ['src/js/**/*.*', 'dist/js/templates.js'],
   files: ['src/index.html'],
   images: 'src/img/**/*.*',
