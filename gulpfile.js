@@ -18,17 +18,8 @@ var vendors = [
 ];
 
 var styles = [
-  'src/bower_components/bootstrap/dist/css/bootstrap.css',
-  'src/bower_components/font-awesome/css/font-awesome.css',
-  'src/less/dashboard/variables.less',
-  'src/less/dashboard/mixins.less',
   'src/less/dashboard/main.less',
-  'src/less/dashboard/loading.less',
-  'src/less/dashboard/content.less',
-  'src/less/dashboard/header.less',
-  'src/less/dashboard/sidebar.less',
-  'src/less/dashboard/widgets.less',
-  'src/less/dashboard/hamburg.less',
+  'src/bower_components/font-awesome/css/font-awesome.css'
 ];
 
 var fonts = [

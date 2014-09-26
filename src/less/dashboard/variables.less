@@ -1,14 +1,18 @@
- /* #592727 RED */
- /* #2f5927 GREEN */
- /* #30426a BLUE (default)*/
+// Import bootstrap's variables first so that we can override
+// any that we're interested in:
+@import "../../bower_components/bootstrap/less/variables.less";
+
+// Override bootstrap's default background color:
+@body-bg: #f3f3f3;
 
 /* Sidebar background color */
- @sidebarBaseColor: #014225;
- /* Sidebar header and footer color */
- @sidebarHeaderColor: darken(@sidebarBaseColor, 2%);
- /* Sidebar title text colour */
- @sidebarTitleColor:  lighten(@sidebarBaseColor, 30%); /*#627cb7*/
+@sidebarBaseColor: #014225;
 
+/* Sidebar header and footer color */
+@sidebarHeaderColor: darken(@sidebarBaseColor, 2%);
 
- /* Font path: */
- @fontPath: '../fonts';
+/* Sidebar title text colour */
+@sidebarTitleColor:  lighten(@sidebarBaseColor, 30%); /*#627cb7*/
+
+/* Font path: */
+@fontPath: '../fonts';
