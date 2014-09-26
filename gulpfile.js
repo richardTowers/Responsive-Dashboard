@@ -14,7 +14,6 @@ var vendors = [
   'src/bower_components/angular-cookies/angular-cookies.js',
   'src/bower_components/angular-bootstrap/ui-bootstrap.js',
   'src/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-  'src/bower_components/angular-ui-router/release/angular-ui-router.js',
 ];
 
 var styles = [
