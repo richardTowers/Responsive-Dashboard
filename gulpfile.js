@@ -105,7 +105,7 @@ gulp.task('compile-less', function(){
 });
 
 // Copy the entire dist folder into the parent repository
-gulp.task('copy-dist', function (){
+gulp.task('copy-dist', ['copy-vendors', 'copy-scripts', 'copy-templates', 'copy-files', 'copy-images', 'copy-fonts', 'compile-less'], function (){
   return gulp.src('dist/**')
     .pipe(gulp.dest('../Styles'));
 });
