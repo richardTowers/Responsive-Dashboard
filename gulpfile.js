@@ -51,9 +51,10 @@ gulp.task('copy-vendors', function() {
 // Minify and copy all dashboard script files to dashboard.min.js
 gulp.task('copy-scripts', function() {
   return gulp.src(paths.js)
+    .pipe(insert.prepend('\'use strict\';'))
+    .pipe(wrap('(function(){ \n<%= contents %>\n})();'))
     .pipe(uglify())
     .pipe(concat('dashboard.min.js'))
-    .pipe(insert.prepend('\'use strict\';'))
     .pipe(gulp.dest('dist/js'));
 });
 
